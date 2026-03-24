@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html class="light" lang="en"><head>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https: 'unsafe-inline' 'unsafe-eval'; img-src 'self' data: https:; font-src 'self' https: data:;"/>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&amp;family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
@@ -86,8 +87,8 @@
 <a href="index.html" class="text-2xl font-light tracking-[0.2em] text-stone-800">KINETIC</a>
 <nav class="hidden md:flex items-center gap-10">
 <a class="text-stone-900 font-medium border-b border-stone-400 pb-1 font-plus-jakarta tracking-widest uppercase text-sm hover:scale-105 transition-all duration-500" href="models.html">Models</a>
-<a class="text-stone-500 font-plus-jakarta tracking-widest uppercase text-sm hover:text-stone-900 transition-all duration-500 hover:scale-105" href="#">Design</a>
-<a class="text-stone-500 font-plus-jakarta tracking-widest uppercase text-sm hover:text-stone-900 transition-all duration-500 hover:scale-105" href="#">Technology</a>
+<a class="text-stone-500 font-plus-jakarta tracking-widest uppercase text-sm hover:text-stone-900 transition-all duration-500 hover:scale-105" href="design.html">Design</a>
+<a class="text-stone-500 font-plus-jakarta tracking-widest uppercase text-sm hover:text-stone-900 transition-all duration-500 hover:scale-105" href="technology.html">Technology</a>
 </nav>
 <a href="reserve.html" class="px-8 py-2 bg-on-surface text-surface rounded-full font-plus-jakarta text-xs tracking-widest uppercase hover:scale-105 transition-all duration-300 inline-flex items-center justify-center">
             Reserve
@@ -233,15 +234,21 @@
 <div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row justify-between items-center gap-8">
 <div class="text-lg font-light tracking-widest text-stone-800">KINETIC</div>
 <div class="flex flex-wrap justify-center gap-8">
-<a class="font-plus-jakarta text-[10px] tracking-[0.15em] uppercase text-stone-400 hover:text-teal-700 transition-colors duration-300" href="#">Privacy</a>
-<a class="font-plus-jakarta text-[10px] tracking-[0.15em] uppercase text-stone-400 hover:text-teal-700 transition-colors duration-300" href="#">Legal</a>
-<a class="font-plus-jakarta text-[10px] tracking-[0.15em] uppercase text-stone-400 hover:text-teal-700 transition-colors duration-300" href="#">Contact</a>
-<a class="font-plus-jakarta text-[10px] tracking-[0.15em] uppercase text-stone-400 hover:text-teal-700 transition-colors duration-300" href="#">Careers</a>
-<a class="font-plus-jakarta text-[10px] tracking-[0.15em] uppercase text-stone-400 hover:text-teal-700 transition-colors duration-300" href="#">Press</a>
+<a class="font-plus-jakarta text-[10px] tracking-[0.15em] uppercase text-stone-400 hover:text-teal-700 transition-colors duration-300" href="legal.html">Privacy</a>
+<a class="font-plus-jakarta text-[10px] tracking-[0.15em] uppercase text-stone-400 hover:text-teal-700 transition-colors duration-300" href="legal.html">Legal</a>
+<a class="font-plus-jakarta text-[10px] tracking-[0.15em] uppercase text-stone-400 hover:text-teal-700 transition-colors duration-300" href="contact.html">Contact</a>
+<a class="font-plus-jakarta text-[10px] tracking-[0.15em] uppercase text-stone-400 hover:text-teal-700 transition-colors duration-300" href="careers.html">Careers</a>
+<a class="font-plus-jakarta text-[10px] tracking-[0.15em] uppercase text-stone-400 hover:text-teal-700 transition-colors duration-300" href="press.html">Press</a>
 </div>
 <div class="font-plus-jakarta text-[10px] tracking-[0.15em] uppercase text-stone-400">
                 © 2024 KINETIC AUTOMOTIVE. ALL RIGHTS RESERVED.
             </div>
 </div>
 </footer>
+
+<!-- GSAP & Lenis for Luxury Animations -->
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
 </body></html>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en"><head>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https: 'unsafe-inline' 'unsafe-eval'; img-src 'self' data: https:; font-src 'self' https: data:;"/>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -98,9 +99,9 @@
 <nav class="bg-white/70 dark:bg-zinc-900/70 backdrop-blur-xl rounded-full mt-6 mx-auto max-w-fit px-6 py-2 border border-zinc-200/50 dark:border-zinc-800/50 shadow-[0_20px_50px_rgba(0,0,0,0.05)] flex items-center gap-8">
 <a href="index.html" class="text-xl font-light tracking-[0.2em] text-zinc-900 dark:text-zinc-100">KINETIC</a>
 <div class="hidden md:flex items-center gap-6">
-<a class="font-['Plus_Jakarta_Sans'] tracking-[0.1em] uppercase text-[12px] font-medium text-zinc-500 dark:text-zinc-400 hover:text-[#7d9d9c] transition-colors duration-500" href="#">Design</a>
-<a class="font-['Plus_Jakarta_Sans'] tracking-[0.1em] uppercase text-[12px] font-medium text-zinc-500 dark:text-zinc-400 hover:text-[#7d9d9c] transition-colors duration-500" href="#">Performance</a>
-<a class="font-['Plus_Jakarta_Sans'] tracking-[0.1em] uppercase text-[12px] font-medium text-zinc-500 dark:text-zinc-400 hover:text-[#7d9d9c] transition-colors duration-500" href="#">Technology</a>
+<a class="font-['Plus_Jakarta_Sans'] tracking-[0.1em] uppercase text-[12px] font-medium text-zinc-500 dark:text-zinc-400 hover:text-[#7d9d9c] transition-colors duration-500" href="design.html">Design</a>
+<a class="font-['Plus_Jakarta_Sans'] tracking-[0.1em] uppercase text-[12px] font-medium text-zinc-500 dark:text-zinc-400 hover:text-[#7d9d9c] transition-colors duration-500" href="models.html#performance">Performance</a>
+<a class="font-['Plus_Jakarta_Sans'] tracking-[0.1em] uppercase text-[12px] font-medium text-zinc-500 dark:text-zinc-400 hover:text-[#7d9d9c] transition-colors duration-500" href="technology.html">Technology</a>
 </div>
 <a href="reserve.html" class="bg-on-surface text-surface px-5 py-1.5 rounded-full font-['Plus_Jakarta_Sans'] tracking-[0.1em] uppercase text-[10px] font-bold hover:scale-105 transition-transform duration-300 ease-out inline-flex items-center justify-center">
                 Reserve
@@ -186,15 +187,15 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div class="flex flex-col gap-2">
 <label class="font-label text-[10px] uppercase tracking-widest font-bold text-secondary ml-1">Legal First Name</label>
-<input class="bg-surface-container-lowest border-none rounded-lg px-5 py-4 text-sm focus:ring-1 focus:ring-secondary/50 placeholder:text-outline-variant" placeholder="Julian" type="text"/>
+<input class="bg-surface-container-lowest border-none rounded-lg px-5 py-4 text-sm focus:ring-1 focus:ring-secondary/50 placeholder:text-outline-variant" placeholder="Julian" type="text" required/>
 </div>
 <div class="flex flex-col gap-2">
 <label class="font-label text-[10px] uppercase tracking-widest font-bold text-secondary ml-1">Legal Last Name</label>
-<input class="bg-surface-container-lowest border-none rounded-lg px-5 py-4 text-sm focus:ring-1 focus:ring-secondary/50 placeholder:text-outline-variant" placeholder="Amsel" type="text"/>
+<input class="bg-surface-container-lowest border-none rounded-lg px-5 py-4 text-sm focus:ring-1 focus:ring-secondary/50 placeholder:text-outline-variant" placeholder="Amsel" type="text" required/>
 </div>
 <div class="flex flex-col gap-2 md:col-span-2">
 <label class="font-label text-[10px] uppercase tracking-widest font-bold text-secondary ml-1">Email Address</label>
-<input class="bg-surface-container-lowest border-none rounded-lg px-5 py-4 text-sm focus:ring-1 focus:ring-secondary/50 placeholder:text-outline-variant" placeholder="julian@kinetic.com" type="email"/>
+<input class="bg-surface-container-lowest border-none rounded-lg px-5 py-4 text-sm focus:ring-1 focus:ring-secondary/50 placeholder:text-outline-variant" placeholder="julian@kinetic.com" type="email" required/>
 </div>
 </div>
 </div>
@@ -224,11 +225,11 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div class="flex flex-col gap-2 md:col-span-2">
 <label class="font-label text-[10px] uppercase tracking-widest font-bold text-secondary ml-1">Cardholder Name</label>
-<input class="bg-surface-container-low border-none rounded-lg px-5 py-4 text-sm focus:ring-1 focus:ring-secondary/50 placeholder:text-outline-variant uppercase" placeholder="JULIAN AMSEL" type="text"/>
+<input class="bg-surface-container-low border-none rounded-lg px-5 py-4 text-sm focus:ring-1 focus:ring-secondary/50 placeholder:text-outline-variant uppercase" placeholder="JULIAN AMSEL" type="text" required/>
 </div>
 <div class="flex flex-col gap-2 md:col-span-2 relative">
 <label class="font-label text-[10px] uppercase tracking-widest font-bold text-secondary ml-1">Card Number</label>
-<input class="bg-surface-container-low border-none rounded-lg px-5 py-4 text-sm focus:ring-1 focus:ring-secondary/50 placeholder:text-outline-variant" placeholder="•••• •••• •••• ••••" type="text"/>
+<input class="bg-surface-container-low border-none rounded-lg px-5 py-4 text-sm focus:ring-1 focus:ring-secondary/50 placeholder:text-outline-variant" placeholder="•••• •••• •••• ••••" type="text" required/>
 <div class="absolute right-4 bottom-4 flex gap-2">
 <div class="w-8 h-5 bg-zinc-200 rounded-sm"></div>
 <div class="w-8 h-5 bg-zinc-300 rounded-sm"></div>
@@ -236,11 +237,11 @@
 </div>
 <div class="flex flex-col gap-2">
 <label class="font-label text-[10px] uppercase tracking-widest font-bold text-secondary ml-1">Expiry Date</label>
-<input class="bg-surface-container-low border-none rounded-lg px-5 py-4 text-sm focus:ring-1 focus:ring-secondary/50 placeholder:text-outline-variant" placeholder="MM / YY" type="text"/>
+<input class="bg-surface-container-low border-none rounded-lg px-5 py-4 text-sm focus:ring-1 focus:ring-secondary/50 placeholder:text-outline-variant" placeholder="MM / YY" type="text" required/>
 </div>
 <div class="flex flex-col gap-2">
 <label class="font-label text-[10px] uppercase tracking-widest font-bold text-secondary ml-1">CVV</label>
-<input class="bg-surface-container-low border-none rounded-lg px-5 py-4 text-sm focus:ring-1 focus:ring-secondary/50 placeholder:text-outline-variant" placeholder="•••" type="text"/>
+<input class="bg-surface-container-low border-none rounded-lg px-5 py-4 text-sm focus:ring-1 focus:ring-secondary/50 placeholder:text-outline-variant" placeholder="•••" type="text" required/>
 </div>
 </div>
 </div>
@@ -287,12 +288,18 @@
 <footer class="bg-[#f9f9f9] dark:bg-zinc-950 flex flex-col items-center justify-center text-center w-full full-width py-24 px-12 border-t border-zinc-200/20">
 <div class="text-4xl font-thin tracking-[0.5em] text-zinc-300 dark:text-zinc-800 mb-8">KINETIC</div>
 <div class="flex flex-wrap justify-center gap-8 mb-12">
-<a class="font-['Manrope'] text-sm tracking-wide text-zinc-400 dark:text-zinc-600 hover:text-zinc-900 dark:hover:text-zinc-100 underline-offset-8 underline transition-all" href="#">Sustainability</a>
-<a class="font-['Manrope'] text-sm tracking-wide text-zinc-400 dark:text-zinc-600 hover:text-zinc-900 dark:hover:text-zinc-100 underline-offset-8 underline transition-all" href="#">Press</a>
-<a class="font-['Manrope'] text-sm tracking-wide text-zinc-400 dark:text-zinc-600 hover:text-zinc-900 dark:hover:text-zinc-100 underline-offset-8 underline transition-all" href="#">Careers</a>
-<a class="font-['Manrope'] text-sm tracking-wide text-zinc-400 dark:text-zinc-600 hover:text-zinc-900 dark:hover:text-zinc-100 underline-offset-8 underline transition-all" href="#">Support</a>
-<a class="font-['Manrope'] text-sm tracking-wide text-zinc-400 dark:text-zinc-600 hover:text-zinc-900 dark:hover:text-zinc-100 underline-offset-8 underline transition-all" href="#">Privacy</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-zinc-400 dark:text-zinc-600 hover:text-zinc-900 dark:hover:text-zinc-100 underline-offset-8 underline transition-all" href="technology.html#sustainability">Sustainability</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-zinc-400 dark:text-zinc-600 hover:text-zinc-900 dark:hover:text-zinc-100 underline-offset-8 underline transition-all" href="press.html">Press</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-zinc-400 dark:text-zinc-600 hover:text-zinc-900 dark:hover:text-zinc-100 underline-offset-8 underline transition-all" href="careers.html">Careers</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-zinc-400 dark:text-zinc-600 hover:text-zinc-900 dark:hover:text-zinc-100 underline-offset-8 underline transition-all" href="contact.html">Support</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-zinc-400 dark:text-zinc-600 hover:text-zinc-900 dark:hover:text-zinc-100 underline-offset-8 underline transition-all" href="legal.html">Privacy</a>
 </div>
 <p class="font-['Manrope'] text-[10px] tracking-[0.2em] text-zinc-400">© 2024 KINETIC MOBILITY. ALL RIGHTS RESERVED.</p>
 </footer>
+
+<!-- GSAP & Lenis for Luxury Animations -->
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
 </body></html>

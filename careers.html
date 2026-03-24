@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https: 'unsafe-inline' 'unsafe-eval'; img-src 'self' data: https:; font-src 'self' https: data:;"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&amp;family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface": "#f9f9f9",
+              "error-dim": "#67040d",
+              "secondary-fixed-dim": "#bddad5",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-fixed-dim": "#cde3f0",
+              "primary": "#605f5e",
+              "on-primary-fixed": "#403f3f",
+              "outline": "#777b7c",
+              "surface-tint": "#605f5e",
+              "surface-container": "#eceeee",
+              "on-error-container": "#6e0a12",
+              "surface-dim": "#d7dbdb",
+              "on-tertiary-fixed-variant": "#516571",
+              "on-tertiary": "#f3faff",
+              "surface-container-low": "#f2f4f4",
+              "primary-dim": "#545353",
+              "error-container": "#fa746f",
+              "tertiary-dim": "#425661",
+              "on-error": "#fff7f6",
+              "tertiary-fixed": "#dbf1ff",
+              "primary-container": "#e5e2e1",
+              "on-secondary-fixed": "#2a4440",
+              "on-secondary-container": "#3c5753",
+              "secondary": "#4a6460",
+              "on-secondary": "#e2fff9",
+              "on-tertiary-container": "#475b67",
+              "on-primary-container": "#525151",
+              "surface-container-highest": "#dfe3e4",
+              "on-primary": "#fcf8f7",
+              "inverse-surface": "#0c0f0f",
+              "on-tertiary-fixed": "#354954",
+              "error": "#a83836",
+              "background": "#f9f9f9",
+              "secondary-container": "#cbe9e3",
+              "primary-fixed-dim": "#d7d4d3",
+              "primary-fixed": "#e5e2e1",
+              "tertiary-container": "#dbf1ff",
+              "inverse-primary": "#ffffff",
+              "surface-variant": "#dfe3e4",
+              "inverse-on-surface": "#9c9d9d",
+              "on-primary-fixed-variant": "#5c5b5b",
+              "outline-variant": "#afb3b3",
+              "on-secondary-fixed-variant": "#46615c",
+              "secondary-fixed": "#cbe9e3",
+              "surface-container-high": "#e6e9e9",
+              "on-surface": "#2f3334",
+              "tertiary": "#4e626d",
+              "on-background": "#2f3334",
+              "surface-bright": "#f9f9f9",
+              "secondary-dim": "#3e5854",
+              "on-surface-variant": "#5b6061"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #f9f9f9; }
+        .font-plus-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-12 py-4 bg-white/70 dark:bg-stone-900/70 backdrop-blur-xl rounded-full mt-6 mx-auto max-w-5xl shadow-[0_20px_50px_rgba(0,0,0,0.05)]">
+<a href="index.html" class="text-2xl font-light tracking-[0.2em] text-stone-800 dark:text-stone-100 font-plus-jakarta">KINETIC</a>
+<div class="hidden md:flex items-center gap-12">
+<a class="text-stone-900 dark:text-white font-medium border-b border-stone-400 pb-1 font-plus-jakarta tracking-widest uppercase text-sm hover:text-stone-900 dark:hover:text-white transition-all duration-500 hover:scale-105" href="models.html">Models</a>
+<a class="text-stone-500 dark:text-stone-400 font-plus-jakarta tracking-widest uppercase text-sm font-light hover:text-stone-900 dark:hover:text-white transition-all duration-500 hover:scale-105" href="design.html">Design</a>
+<a class="text-stone-500 dark:text-stone-400 font-plus-jakarta tracking-widest uppercase text-sm font-light hover:text-stone-900 dark:hover:text-white transition-all duration-500 hover:scale-105" href="technology.html">Technology</a>
+</div>
+<a href="reserve.html" class="bg-on-surface text-surface px-8 py-2.5 rounded-full font-plus-jakarta text-xs tracking-widest uppercase hover:scale-105 transition-transform duration-300 inline-flex items-center justify-center">
+            Reserve
+        </a>
+</nav>
+<main class="relative pt-32">
+        <section class="py-40 px-6 md:px-20 min-h-screen text-center flex flex-col items-center justify-center">
+            <h1 class="font-headline text-5xl md:text-7xl font-light mb-8">Build the <span class="italic text-secondary">Future</span></h1>
+            <p class="text-on-surface-variant max-w-2xl mx-auto leading-relaxed mb-12">
+                We are actively looking for visionaries in artificial intelligence, materials science, and industrial design. 
+            </p>
+            <div class="bg-secondary-container/30 px-8 py-6 rounded-xl border border-secondary/10 inline-block">
+                <p class="font-headline text-sm font-bold text-on-secondary-container">No open positions at this exact moment.</p>
+                <p class="text-xs text-secondary mt-2">Check back in Q3 2025.</p>
+            </div>
+        </section>
+    </main>
+<!-- Footer -->
+<footer class="bg-stone-50 dark:bg-stone-950 w-full flex flex-col md:flex-row justify-between items-center gap-8 full-width py-20 px-10 tonal-shift bg-stone-100 dark:bg-stone-900">
+<div class="text-lg font-light tracking-widest text-stone-800 dark:text-stone-200 font-plus-jakarta">KINETIC</div>
+<div class="flex gap-10">
+<a class="text-stone-400 dark:text-stone-600 font-plus-jakarta text-[10px] tracking-[0.15em] uppercase hover:text-teal-700 dark:hover:text-teal-500 transition-colors duration-300 opacity-80 hover:opacity-100" href="legal.html">Privacy</a>
+<a class="text-stone-400 dark:text-stone-600 font-plus-jakarta text-[10px] tracking-[0.15em] uppercase hover:text-teal-700 dark:hover:text-teal-500 transition-colors duration-300 opacity-80 hover:opacity-100" href="legal.html">Legal</a>
+<a class="text-stone-400 dark:text-stone-600 font-plus-jakarta text-[10px] tracking-[0.15em] uppercase hover:text-teal-700 dark:hover:text-teal-500 transition-colors duration-300 opacity-80 hover:opacity-100" href="contact.html">Contact</a>
+<a class="text-stone-400 dark:text-stone-600 font-plus-jakarta text-[10px] tracking-[0.15em] uppercase hover:text-teal-700 dark:hover:text-teal-500 transition-colors duration-300 opacity-80 hover:opacity-100" href="careers.html">Careers</a>
+<a class="text-stone-400 dark:text-stone-600 font-plus-jakarta text-[10px] tracking-[0.15em] uppercase hover:text-teal-700 dark:hover:text-teal-500 transition-colors duration-300 opacity-80 hover:opacity-100" href="press.html">Press</a>
+</div>
+<div class="text-stone-400 dark:text-stone-600 font-plus-jakarta text-[10px] tracking-[0.15em] uppercase opacity-80">
+            © 2024 KINETIC AUTOMOTIVE. ALL RIGHTS RESERVED.
+        </div>
+</footer>
+
+<!-- GSAP & Lenis for Luxury Animations -->
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body></html>
