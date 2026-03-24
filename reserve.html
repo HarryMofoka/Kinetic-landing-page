@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&amp;family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary": "#fcf8f7",
+              "inverse-on-surface": "#9c9d9d",
+              "secondary-fixed": "#cbe9e3",
+              "primary-fixed-dim": "#d7d4d3",
+              "primary-dim": "#545353",
+              "background": "#f9f9f9",
+              "primary-container": "#e5e2e1",
+              "on-secondary-container": "#3c5753",
+              "surface-container": "#eceeee",
+              "tertiary": "#4e626d",
+              "on-secondary": "#e2fff9",
+              "error-dim": "#67040d",
+              "tertiary-container": "#dbf1ff",
+              "surface-variant": "#dfe3e4",
+              "tertiary-dim": "#425661",
+              "on-tertiary-container": "#475b67",
+              "surface-tint": "#605f5e",
+              "surface-dim": "#d7dbdb",
+              "surface-container-lowest": "#ffffff",
+              "error": "#a83836",
+              "surface-container-low": "#f2f4f4",
+              "on-primary-fixed-variant": "#5c5b5b",
+              "on-primary-fixed": "#403f3f",
+              "on-tertiary-fixed": "#354954",
+              "secondary": "#4a6460",
+              "on-primary-container": "#525151",
+              "outline-variant": "#afb3b3",
+              "surface-bright": "#f9f9f9",
+              "on-surface-variant": "#5b6061",
+              "on-error": "#fff7f6",
+              "error-container": "#fa746f",
+              "outline": "#777b7c",
+              "surface": "#f9f9f9",
+              "surface-container-highest": "#dfe3e4",
+              "on-background": "#2f3334",
+              "inverse-surface": "#0c0f0f",
+              "primary-fixed": "#e5e2e1",
+              "on-error-container": "#6e0a12",
+              "tertiary-fixed-dim": "#cde3f0",
+              "secondary-dim": "#3e5854",
+              "on-secondary-fixed-variant": "#46615c",
+              "secondary-container": "#cbe9e3",
+              "on-tertiary-fixed-variant": "#516571",
+              "on-tertiary": "#f3faff",
+              "tertiary-fixed": "#dbf1ff",
+              "inverse-primary": "#ffffff",
+              "secondary-fixed-dim": "#bddad5",
+              "on-surface": "#2f3334",
+              "surface-container-high": "#e6e9e9",
+              "on-secondary-fixed": "#2a4440",
+              "primary": "#605f5e"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .editorial-shadow {
+            box-shadow: 0 40px 80px -20px rgba(47, 51, 52, 0.08);
+        }
+        /* Hide scrollbars but keep functionality */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-container">
+<!-- TopNavBar (Floating Pill) -->
+<header class="fixed top-0 left-0 right-0 z-50 flex justify-center w-full">
+<nav class="bg-white/70 dark:bg-zinc-900/70 backdrop-blur-xl rounded-full mt-6 mx-auto max-w-fit px-6 py-2 border border-zinc-200/50 dark:border-zinc-800/50 shadow-[0_20px_50px_rgba(0,0,0,0.05)] flex items-center gap-8">
+<a href="index.html" class="text-xl font-light tracking-[0.2em] text-zinc-900 dark:text-zinc-100">KINETIC</a>
+<div class="hidden md:flex items-center gap-6">
+<a class="font-['Plus_Jakarta_Sans'] tracking-[0.1em] uppercase text-[12px] font-medium text-zinc-500 dark:text-zinc-400 hover:text-[#7d9d9c] transition-colors duration-500" href="#">Design</a>
+<a class="font-['Plus_Jakarta_Sans'] tracking-[0.1em] uppercase text-[12px] font-medium text-zinc-500 dark:text-zinc-400 hover:text-[#7d9d9c] transition-colors duration-500" href="#">Performance</a>
+<a class="font-['Plus_Jakarta_Sans'] tracking-[0.1em] uppercase text-[12px] font-medium text-zinc-500 dark:text-zinc-400 hover:text-[#7d9d9c] transition-colors duration-500" href="#">Technology</a>
+</div>
+<a href="reserve.html" class="bg-on-surface text-surface px-5 py-1.5 rounded-full font-['Plus_Jakarta_Sans'] tracking-[0.1em] uppercase text-[10px] font-bold hover:scale-105 transition-transform duration-300 ease-out inline-flex items-center justify-center">
+                Reserve
+            </a>
+</nav>
+</header>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
+<!-- Header & Progress Section -->
+<section class="mb-16 text-center">
+<h1 class="font-headline font-extrabold text-4xl md:text-6xl tracking-tighter text-on-surface mb-6">Model X1 Reservation</h1>
+<div class="flex justify-center items-center gap-4 max-w-md mx-auto">
+<div class="flex flex-col items-center gap-2 group">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label text-[10px] uppercase tracking-widest font-bold text-on-surface">Selection</span>
+</div>
+<div class="h-[1px] w-12 bg-outline-variant/30"></div>
+<div class="flex flex-col items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-outline-variant/50"></span>
+<span class="font-label text-[10px] uppercase tracking-widest text-outline">Identity</span>
+</div>
+<div class="h-[1px] w-12 bg-outline-variant/30"></div>
+<div class="flex flex-col items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-outline-variant/50"></span>
+<span class="font-label text-[10px] uppercase tracking-widest text-outline">Deposit</span>
+</div>
+</div>
+</section>
+<!-- Main Flow Container (Bento Style Layout) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Step 1 & 2 Left Column: The Configuration Summary -->
+<div class="lg:col-span-4 space-y-6">
+<div class="bg-surface-container-lowest rounded-xl p-8 editorial-shadow">
+<h3 class="font-headline font-bold text-lg mb-6 tracking-tight">Configuration</h3>
+<div class="relative rounded-lg overflow-hidden mb-6 aspect-[4/3] bg-surface-container">
+<img alt="Kinetic X1 Exterior" class="object-cover w-full h-full" data-alt="Sleek silver futuristic electric sports car profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJJXVLFQyWKIKxzaxpnmqRMSf1Y5b5P58CSan9iLN9Sg2JXZl9Uj2bbIN8wkINh0in2u66vhHOJhl_Y1KsYCcsEWpCib4BsEvD4htx2XFG2pps8NFoTTHf5CiYo3snrMjOnv9STI_B9A82GZeWmgmoPtY8Kdzwut1yEpYgaobf8fU485wLszG-P4vKkD4U_UhzQYtSVCxwoYDIHZcGVcVX7ZX6U4um6s69FP9i0QzsB37Mpt8dGrSOxc3E3qSxbJOCLVjTYZULgg"/>
+<div class="absolute bottom-4 left-4">
+<span class="bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase">Obsidian Grey</span>
+</div>
+</div>
+<ul class="space-y-4">
+<li class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant font-medium">Model</span>
+<span class="font-bold">X1 Performance</span>
+</li>
+<li class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant font-medium">Drive</span>
+<span class="font-bold">Dual-Motor AWD</span>
+</li>
+<li class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant font-medium">Interior</span>
+<span class="font-bold">Vegan Cloud White</span>
+</li>
+<li class="h-[1px] bg-outline-variant/10 my-4"></li>
+<li class="flex justify-between items-center">
+<span class="text-on-surface font-semibold">Base Price</span>
+<span class="font-headline font-bold text-lg">$84,000</span>
+</li>
+<li class="flex justify-between items-center text-secondary">
+<span class="text-sm font-semibold">Deposit Required</span>
+<span class="font-headline font-extrabold">$2,500</span>
+</li>
+</ul>
+</div>
+<div class="bg-secondary-container/30 rounded-xl p-6 border border-secondary/10">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<div>
+<p class="text-xs font-bold uppercase tracking-widest text-on-secondary-container mb-1">Production Queue</p>
+<p class="text-sm text-on-secondary-container/80 leading-relaxed">Your reservation secures an estimated delivery window of Q3 2025.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Interactive Form Area -->
+<div class="lg:col-span-8">
+<div class="bg-surface-container-low rounded-xl p-8 md:p-12">
+<!-- Section: Identity -->
+<div class="mb-12">
+<div class="flex items-baseline gap-3 mb-8">
+<span class="font-headline font-thin text-5xl text-outline-variant/50">01</span>
+<h2 class="font-headline font-bold text-2xl tracking-tight">Personal Identity</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-label text-[10px] uppercase tracking-widest font-bold text-secondary ml-1">Legal First Name</label>
+<input class="bg-surface-container-lowest border-none rounded-lg px-5 py-4 text-sm focus:ring-1 focus:ring-secondary/50 placeholder:text-outline-variant" placeholder="Julian" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label text-[10px] uppercase tracking-widest font-bold text-secondary ml-1">Legal Last Name</label>
+<input class="bg-surface-container-lowest border-none rounded-lg px-5 py-4 text-sm focus:ring-1 focus:ring-secondary/50 placeholder:text-outline-variant" placeholder="Amsel" type="text"/>
+</div>
+<div class="flex flex-col gap-2 md:col-span-2">
+<label class="font-label text-[10px] uppercase tracking-widest font-bold text-secondary ml-1">Email Address</label>
+<input class="bg-surface-container-lowest border-none rounded-lg px-5 py-4 text-sm focus:ring-1 focus:ring-secondary/50 placeholder:text-outline-variant" placeholder="julian@kinetic.com" type="email"/>
+</div>
+</div>
+</div>
+<!-- Section: Payment / Deposit -->
+<div class="mb-12">
+<div class="flex items-baseline gap-3 mb-8">
+<span class="font-headline font-thin text-5xl text-outline-variant/50">02</span>
+<h2 class="font-headline font-bold text-2xl tracking-tight">Reservation Deposit</h2>
+</div>
+<div class="space-y-6">
+<!-- Card Selection -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<button class="flex flex-col items-center gap-3 p-6 rounded-xl bg-surface-container-lowest border border-secondary transition-all">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">credit_card</span>
+<span class="font-label text-[10px] uppercase tracking-widest font-bold">Credit Card</span>
+</button>
+<button class="flex flex-col items-center gap-3 p-6 rounded-xl bg-surface-container-lowest border border-transparent hover:border-outline-variant/30 transition-all opacity-50">
+<span class="material-symbols-outlined text-on-surface-variant">account_balance</span>
+<span class="font-label text-[10px] uppercase tracking-widest font-bold">Bank Transfer</span>
+</button>
+<button class="flex flex-col items-center gap-3 p-6 rounded-xl bg-surface-container-lowest border border-transparent hover:border-outline-variant/30 transition-all opacity-50">
+<span class="material-symbols-outlined text-on-surface-variant">token</span>
+<span class="font-label text-[10px] uppercase tracking-widest font-bold">Crypto</span>
+</button>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2 md:col-span-2">
+<label class="font-label text-[10px] uppercase tracking-widest font-bold text-secondary ml-1">Cardholder Name</label>
+<input class="bg-surface-container-low border-none rounded-lg px-5 py-4 text-sm focus:ring-1 focus:ring-secondary/50 placeholder:text-outline-variant uppercase" placeholder="JULIAN AMSEL" type="text"/>
+</div>
+<div class="flex flex-col gap-2 md:col-span-2 relative">
+<label class="font-label text-[10px] uppercase tracking-widest font-bold text-secondary ml-1">Card Number</label>
+<input class="bg-surface-container-low border-none rounded-lg px-5 py-4 text-sm focus:ring-1 focus:ring-secondary/50 placeholder:text-outline-variant" placeholder="•••• •••• •••• ••••" type="text"/>
+<div class="absolute right-4 bottom-4 flex gap-2">
+<div class="w-8 h-5 bg-zinc-200 rounded-sm"></div>
+<div class="w-8 h-5 bg-zinc-300 rounded-sm"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label text-[10px] uppercase tracking-widest font-bold text-secondary ml-1">Expiry Date</label>
+<input class="bg-surface-container-low border-none rounded-lg px-5 py-4 text-sm focus:ring-1 focus:ring-secondary/50 placeholder:text-outline-variant" placeholder="MM / YY" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label text-[10px] uppercase tracking-widest font-bold text-secondary ml-1">CVV</label>
+<input class="bg-surface-container-low border-none rounded-lg px-5 py-4 text-sm focus:ring-1 focus:ring-secondary/50 placeholder:text-outline-variant" placeholder="•••" type="text"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row items-center justify-between gap-6 mt-12 pt-8 border-t border-outline-variant/10">
+<div class="flex items-center gap-3">
+<input class="w-5 h-5 rounded-md border-outline-variant text-secondary focus:ring-secondary" id="terms" type="checkbox"/>
+<label class="text-xs text-on-surface-variant leading-relaxed" for="terms">I agree to the <a class="underline decoration-secondary/30 underline-offset-4 font-bold text-on-surface" href="#">Reservation Agreement</a> and acknowledge the $2,500 non-refundable deposit.</label>
+</div>
+<a href="reserve-step-2.html" class="w-full md:w-auto bg-on-surface text-surface px-12 py-5 rounded-full font-headline font-bold text-sm uppercase tracking-widest hover:scale-105 transition-transform duration-300 shadow-xl flex items-center justify-center gap-3 group">
+                            Complete Reservation
+                            <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Success Modal Overlay (Simplified for view) -->
+<div class="hidden fixed inset-0 z-[100] flex items-center justify-center p-6 bg-surface/80 backdrop-blur-md">
+<div class="bg-surface-container-lowest editorial-shadow max-w-2xl w-full rounded-xl overflow-hidden text-center p-12 relative">
+<div class="w-20 h-20 bg-secondary-container rounded-full flex items-center justify-center mx-auto mb-8">
+<span class="material-symbols-outlined text-4xl text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<h2 class="font-headline font-extrabold text-4xl tracking-tight mb-4">Reservation Confirmed</h2>
+<p class="text-on-surface-variant max-w-md mx-auto mb-10 text-lg leading-relaxed">Welcome to the future of mobility. Your KINETIC X1 spot is secured. We've sent a detailed welcome kit and your digital ownership certificate to your email.</p>
+<div class="bg-surface-container-low rounded-lg p-6 mb-10 flex justify-between items-center text-left">
+<div>
+<p class="text-[10px] font-bold uppercase tracking-widest text-outline mb-1">Reservation ID</p>
+<p class="font-headline font-bold text-xl">KNT-8829-X1</p>
+</div>
+<div class="text-right">
+<p class="text-[10px] font-bold uppercase tracking-widest text-outline mb-1">Queue Priority</p>
+<p class="font-headline font-bold text-xl text-secondary">#0492</p>
+</div>
+</div>
+<button class="bg-on-surface text-surface px-10 py-4 rounded-full font-headline font-bold text-xs uppercase tracking-widest hover:scale-105 transition-transform">
+                Go to Dashboard
+            </button>
+</div>
+</div>
+<!-- Footer (Editorial) -->
+<footer class="bg-[#f9f9f9] dark:bg-zinc-950 flex flex-col items-center justify-center text-center w-full full-width py-24 px-12 border-t border-zinc-200/20">
+<div class="text-4xl font-thin tracking-[0.5em] text-zinc-300 dark:text-zinc-800 mb-8">KINETIC</div>
+<div class="flex flex-wrap justify-center gap-8 mb-12">
+<a class="font-['Manrope'] text-sm tracking-wide text-zinc-400 dark:text-zinc-600 hover:text-zinc-900 dark:hover:text-zinc-100 underline-offset-8 underline transition-all" href="#">Sustainability</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-zinc-400 dark:text-zinc-600 hover:text-zinc-900 dark:hover:text-zinc-100 underline-offset-8 underline transition-all" href="#">Press</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-zinc-400 dark:text-zinc-600 hover:text-zinc-900 dark:hover:text-zinc-100 underline-offset-8 underline transition-all" href="#">Careers</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-zinc-400 dark:text-zinc-600 hover:text-zinc-900 dark:hover:text-zinc-100 underline-offset-8 underline transition-all" href="#">Support</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-zinc-400 dark:text-zinc-600 hover:text-zinc-900 dark:hover:text-zinc-100 underline-offset-8 underline transition-all" href="#">Privacy</a>
+</div>
+<p class="font-['Manrope'] text-[10px] tracking-[0.2em] text-zinc-400">© 2024 KINETIC MOBILITY. ALL RIGHTS RESERVED.</p>
+</footer>
+</body></html>

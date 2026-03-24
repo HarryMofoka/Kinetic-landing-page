@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&amp;family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface": "#f9f9f9",
+              "error-dim": "#67040d",
+              "secondary-fixed-dim": "#bddad5",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-fixed-dim": "#cde3f0",
+              "primary": "#605f5e",
+              "on-primary-fixed": "#403f3f",
+              "outline": "#777b7c",
+              "surface-tint": "#605f5e",
+              "surface-container": "#eceeee",
+              "on-error-container": "#6e0a12",
+              "surface-dim": "#d7dbdb",
+              "on-tertiary-fixed-variant": "#516571",
+              "on-tertiary": "#f3faff",
+              "surface-container-low": "#f2f4f4",
+              "primary-dim": "#545353",
+              "error-container": "#fa746f",
+              "tertiary-dim": "#425661",
+              "on-error": "#fff7f6",
+              "tertiary-fixed": "#dbf1ff",
+              "primary-container": "#e5e2e1",
+              "on-secondary-fixed": "#2a4440",
+              "on-secondary-container": "#3c5753",
+              "secondary": "#4a6460",
+              "on-secondary": "#e2fff9",
+              "on-tertiary-container": "#475b67",
+              "on-primary-container": "#525151",
+              "surface-container-highest": "#dfe3e4",
+              "on-primary": "#fcf8f7",
+              "inverse-surface": "#0c0f0f",
+              "on-tertiary-fixed": "#354954",
+              "error": "#a83836",
+              "background": "#f9f9f9",
+              "secondary-container": "#cbe9e3",
+              "primary-fixed-dim": "#d7d4d3",
+              "primary-fixed": "#e5e2e1",
+              "tertiary-container": "#dbf1ff",
+              "inverse-primary": "#ffffff",
+              "surface-variant": "#dfe3e4",
+              "inverse-on-surface": "#9c9d9d",
+              "on-primary-fixed-variant": "#5c5b5b",
+              "outline-variant": "#afb3b3",
+              "on-secondary-fixed-variant": "#46615c",
+              "secondary-fixed": "#cbe9e3",
+              "surface-container-high": "#e6e9e9",
+              "on-surface": "#2f3334",
+              "tertiary": "#4e626d",
+              "on-background": "#2f3334",
+              "surface-bright": "#f9f9f9",
+              "secondary-dim": "#3e5854",
+              "on-surface-variant": "#5b6061"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #f9f9f9; }
+        .font-plus-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-12 py-4 bg-white/70 dark:bg-stone-900/70 backdrop-blur-xl rounded-full mt-6 mx-auto max-w-5xl shadow-[0_20px_50px_rgba(0,0,0,0.05)]">
+<a href="index.html" class="text-2xl font-light tracking-[0.2em] text-stone-800 dark:text-stone-100 font-plus-jakarta">KINETIC</a>
+<div class="hidden md:flex items-center gap-12">
+<a class="text-stone-900 dark:text-white font-medium border-b border-stone-400 pb-1 font-plus-jakarta tracking-widest uppercase text-sm hover:text-stone-900 dark:hover:text-white transition-all duration-500 hover:scale-105" href="models.html">Models</a>
+<a class="text-stone-500 dark:text-stone-400 font-plus-jakarta tracking-widest uppercase text-sm font-light hover:text-stone-900 dark:hover:text-white transition-all duration-500 hover:scale-105" href="#">Design</a>
+<a class="text-stone-500 dark:text-stone-400 font-plus-jakarta tracking-widest uppercase text-sm font-light hover:text-stone-900 dark:hover:text-white transition-all duration-500 hover:scale-105" href="#">Technology</a>
+</div>
+<a href="reserve.html" class="bg-on-surface text-surface px-8 py-2.5 rounded-full font-plus-jakarta text-xs tracking-widest uppercase hover:scale-105 transition-transform duration-300 inline-flex items-center justify-center">
+            Reserve
+        </a>
+</nav>
+<main class="relative pt-32">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex flex-col justify-center px-6 md:px-20 overflow-hidden">
+<div class="z-10 max-w-4xl">
+<h1 class="font-headline text-7xl md:text-[10rem] font-extralight tracking-[-0.02em] leading-none mb-8 opacity-90">
+                    Pure <span class="italic text-secondary">Kinetic</span>.
+                </h1>
+<p class="font-body text-xl md:text-2xl text-primary max-w-xl leading-relaxed font-light">
+                    The intersection of silence and motion. Experience the evolution of the electric drive in its most refined form.
+                </p>
+<div class="mt-12 flex items-center gap-8">
+<a href="models.html" class="px-10 py-5 bg-on-surface text-surface rounded-full text-sm font-headline tracking-widest uppercase hover:scale-105 transition-all duration-500 shadow-xl shadow-on-surface/5 inline-flex items-center justify-center">
+                        Discover the Sedan
+                    </a>
+<div class="flex items-center gap-4 text-primary group cursor-pointer">
+<span class="w-12 h-[1px] bg-outline-variant group-hover:w-20 transition-all duration-500"></span>
+<span class="font-headline text-xs tracking-widest uppercase">View Gallery</span>
+</div>
+</div>
+</div>
+<!-- Hero Image: Side Profile -->
+<div class="absolute right-0 top-1/2 -translate-y-1/2 w-full md:w-[65%] h-[60%] md:h-[80%] z-0 pointer-events-none">
+<div class="relative w-full h-full">
+<img alt="Side profile of a minimalist sage electric sedan" class="w-full h-full object-cover rounded-l-xl md:rounded-l-[4rem] grayscale hover:grayscale-0 transition-all duration-1000" data-alt="Side profile of a sleek minimalist sage electric sedan in soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWUKFRrW4SjvZLTlxzCO4cvYooSakf-hSZSLeX15fYpQ5MooTz9ax95CEmrrbSEuXi6mOgUCHLTGIH1nIB-0HqeC2GkeJfNkT9_bdu8hCTnR9hGe6t7wNqKJywIP57BJRl1kKmvIv3SgewIrIanukic5XP2Jrjhz1jzjVuBR631ttS3ApBcFCB1uHRRAxZ8mvmZRDYrzKItWE2Le2mnJyQumnIzQAxZqGAloqO98mmyg4Xdf3oLrsPgVlEndaMQ6FGYkJKuMaKhg"/>
+<!-- Glassmorphic Accent Chip -->
+<div class="absolute bottom-12 left-12 p-8 bg-surface-container-lowest/20 backdrop-blur-2xl rounded-xl border border-white/10 hidden md:block">
+<p class="text-[10px] uppercase tracking-[0.3em] text-white/60 mb-2">Exterior Finish</p>
+<p class="text-white font-headline text-lg tracking-widest">Kinetic Sage</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Asymmetric Intro Section -->
+<section class="py-40 px-6 md:px-20 grid grid-cols-1 md:grid-cols-12 gap-12 items-end">
+<div class="md:col-span-7">
+<div class="text-[10px] font-headline tracking-[0.5em] uppercase text-secondary mb-12">Architecture</div>
+<h2 class="font-headline text-4xl md:text-6xl font-light leading-tight mb-12">
+                    Defined by <span class="font-medium italic">what is not there</span>. No noise. No complexity. Just pure momentum.
+                </h2>
+</div>
+<div class="md:col-span-4 md:col-start-9 pb-4">
+<p class="font-body text-on-surface-variant leading-loose mb-8">
+                    Our design philosophy removes the clutter of traditional automotive engineering, replacing mechanical noise with an intelligent neural core that anticipates your intent.
+                </p>
+<div class="w-20 h-20 rounded-full border border-outline-variant/30 flex items-center justify-center hover:bg-secondary-container transition-colors duration-500 cursor-pointer">
+<span class="material-symbols-outlined text-on-surface">arrow_downward</span>
+</div>
+</div>
+</section>
+<!-- Defining the Future: Bento Grid / 3-Column Highlights -->
+<section class="py-32 px-6 md:px-20 bg-surface-container-low rounded-t-[4rem]">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+<div>
+<h3 class="font-headline text-4xl font-light tracking-tight mb-4">Defining the Future</h3>
+<p class="text-primary-dim font-body">Integrated systems working in absolute harmony.</p>
+</div>
+<div class="h-[1px] flex-grow mx-12 bg-outline-variant/20 hidden md:block"></div>
+<div class="text-xs font-headline tracking-widest uppercase opacity-40">01 — 03</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Autonomous Drive -->
+<div class="group bg-surface-container-lowest p-12 rounded-xl transition-all duration-700 hover:-translate-y-4 hover:shadow-[0_40px_80px_rgba(0,0,0,0.03)] border border-transparent hover:border-outline-variant/10">
+<div class="w-14 h-14 rounded-full bg-surface-container mb-12 flex items-center justify-center group-hover:bg-secondary-container transition-colors duration-500">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">sensors</span>
+</div>
+<h4 class="font-headline text-xl mb-6 tracking-wide">Autonomous Drive</h4>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed mb-10">
+                        Level 4 precision. A system that learns the nuance of your path, delivering a hands-free journey that feels entirely natural.
+                    </p>
+<div class="flex items-center gap-2 text-secondary font-headline text-[10px] tracking-[0.2em] uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        Explore Tech <span class="material-symbols-outlined text-xs">chevron_right</span>
+</div>
+</div>
+<!-- Neural OS -->
+<div class="group bg-surface-container-lowest p-12 rounded-xl transition-all duration-700 hover:-translate-y-4 hover:shadow-[0_40px_80px_rgba(0,0,0,0.03)] border border-transparent hover:border-outline-variant/10">
+<div class="w-14 h-14 rounded-full bg-surface-container mb-12 flex items-center justify-center group-hover:bg-secondary-container transition-colors duration-500">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">neurology</span>
+</div>
+<h4 class="font-headline text-xl mb-6 tracking-wide">Neural OS</h4>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed mb-10">
+                        An operating system that evolves with you. Real-time processing that syncs your digital life with your physical environment.
+                    </p>
+<div class="flex items-center gap-2 text-secondary font-headline text-[10px] tracking-[0.2em] uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        System Specs <span class="material-symbols-outlined text-xs">chevron_right</span>
+</div>
+</div>
+<!-- Sustainable Craft -->
+<div class="group bg-surface-container-lowest p-12 rounded-xl transition-all duration-700 hover:-translate-y-4 hover:shadow-[0_40px_80px_rgba(0,0,0,0.03)] border border-transparent hover:border-outline-variant/10">
+<div class="w-14 h-14 rounded-full bg-surface-container mb-12 flex items-center justify-center group-hover:bg-secondary-container transition-colors duration-500">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<h4 class="font-headline text-xl mb-6 tracking-wide">Sustainable Craft</h4>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed mb-10">
+                        Interiors crafted from ocean-recovered polymers and reclaimed walnut. Luxury that honors the world it travels through.
+                    </p>
+<div class="flex items-center gap-2 text-secondary font-headline text-[10px] tracking-[0.2em] uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        The Material <span class="material-symbols-outlined text-xs">chevron_right</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Highlight: Detail Shot -->
+<section class="py-40 px-6 md:px-20 grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="relative rounded-xl overflow-hidden aspect-square md:aspect-auto md:h-[700px]">
+<img alt="Interior detail of Kinetic vehicle" class="w-full h-full object-cover" data-alt="Ultra-close up of premium electric vehicle dashboard with ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrwbQ2MhavNldqMqKUSE4XFx8n2JyJwjsDxjGsYr4y_IPr-PpccdmNjXVcW9Uim7QL0kIF7-gJNu0X5QH5-Nuzef6kVPvfB3c_Zcc6Mc_RMTtIcWg8X8tOLwRgFgd-5i_RO5e1UVbJp_MDphE0jHDYvI6lKlwxGRhcPJfHjesGSs83JDk2ujosA95N7g3TtOF07C-fw8-UO4lP58PN2JQ4ZufONljZiPMkzWXbxUX4jez17cqCH6CM0EfzkEpNPHEYv-drOT6lcA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<div class="absolute bottom-12 left-12 right-12 text-white">
+<p class="font-headline tracking-widest uppercase text-[10px] mb-4 opacity-70">Detail 042</p>
+<p class="text-3xl font-light">The Haptic Command Center</p>
+</div>
+</div>
+<div>
+<h3 class="font-headline text-5xl font-light mb-10 leading-tight">The sensory experience of <span class="text-secondary italic">tomorrow</span>.</h3>
+<p class="font-body text-lg text-on-surface-variant leading-relaxed mb-12">
+                    Every touchpoint is designed for visceral feedback. We use high-fidelity haptics and spatial audio to create an interface that feels like an extension of your own body.
+                </p>
+<ul class="space-y-6">
+<li class="flex items-start gap-4 pb-6 border-b border-outline-variant/10">
+<span class="font-headline text-xs text-secondary mt-1">01</span>
+<span class="font-body text-on-surface">360° Immersive Soundstage</span>
+</li>
+<li class="flex items-start gap-4 pb-6 border-b border-outline-variant/10">
+<span class="font-headline text-xs text-secondary mt-1">02</span>
+<span class="font-body text-on-surface">Biometric Entry &amp; Preferences</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="font-headline text-xs text-secondary mt-1">03</span>
+<span class="font-body text-on-surface">Dynamic Ambient Lighting Spectrum</span>
+</li>
+</ul>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-6 text-center">
+<div class="max-w-3xl mx-auto py-24 px-12 bg-on-surface text-surface rounded-[3rem] relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 group-hover:bg-secondary/40 transition-all duration-1000"></div>
+<h2 class="font-headline text-4xl md:text-5xl font-light mb-8 relative z-10">Begin Your Journey.</h2>
+<p class="font-body text-surface/60 mb-12 relative z-10 max-w-lg mx-auto leading-relaxed">
+                    Reservations are now open for the Kinetic Signature Series. Limited availability for 2025 delivery.
+                </p>
+<div class="flex flex-col md:flex-row items-center justify-center gap-6 relative z-10">
+<a href="reserve.html" class="bg-surface text-on-surface px-12 py-5 rounded-full font-headline text-xs tracking-[0.2em] uppercase hover:scale-105 transition-all inline-flex items-center justify-center">Configure Now</a>
+<button class="border border-surface/30 px-12 py-5 rounded-full font-headline text-xs tracking-[0.2em] uppercase hover:bg-surface/5 transition-all">Download Brochure</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-50 dark:bg-stone-950 w-full flex flex-col md:flex-row justify-between items-center gap-8 full-width py-20 px-10 tonal-shift bg-stone-100 dark:bg-stone-900">
+<div class="text-lg font-light tracking-widest text-stone-800 dark:text-stone-200 font-plus-jakarta">KINETIC</div>
+<div class="flex gap-10">
+<a class="text-stone-400 dark:text-stone-600 font-plus-jakarta text-[10px] tracking-[0.15em] uppercase hover:text-teal-700 dark:hover:text-teal-500 transition-colors duration-300 opacity-80 hover:opacity-100" href="#">Privacy</a>
+<a class="text-stone-400 dark:text-stone-600 font-plus-jakarta text-[10px] tracking-[0.15em] uppercase hover:text-teal-700 dark:hover:text-teal-500 transition-colors duration-300 opacity-80 hover:opacity-100" href="#">Legal</a>
+<a class="text-stone-400 dark:text-stone-600 font-plus-jakarta text-[10px] tracking-[0.15em] uppercase hover:text-teal-700 dark:hover:text-teal-500 transition-colors duration-300 opacity-80 hover:opacity-100" href="#">Contact</a>
+<a class="text-stone-400 dark:text-stone-600 font-plus-jakarta text-[10px] tracking-[0.15em] uppercase hover:text-teal-700 dark:hover:text-teal-500 transition-colors duration-300 opacity-80 hover:opacity-100" href="#">Careers</a>
+<a class="text-stone-400 dark:text-stone-600 font-plus-jakarta text-[10px] tracking-[0.15em] uppercase hover:text-teal-700 dark:hover:text-teal-500 transition-colors duration-300 opacity-80 hover:opacity-100" href="#">Press</a>
+</div>
+<div class="text-stone-400 dark:text-stone-600 font-plus-jakarta text-[10px] tracking-[0.15em] uppercase opacity-80">
+            © 2024 KINETIC AUTOMOTIVE. ALL RIGHTS RESERVED.
+        </div>
+</footer>
+</body></html>
